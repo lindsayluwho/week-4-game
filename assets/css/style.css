@@ -7,3 +7,14 @@
   main {
     flex: 1 0 auto;
   }
+
+  h1
+  {
+  	font-size: 6rem;
+  }
+
+  .page-header{
+  	width: 100%;
+  	font-family: 'Bangers', cursive;
+
+  }
