@@ -1,7 +1,7 @@
-var score;
+var score = 0;
 var goal;
-var wins;
-var losses;
+var wins = 0;
+var losses = 0;
 var crystalValue = [(Math.floor(Math.random() * 11)) + 1, (Math.floor(Math.random() * 11)) + 1, (Math.floor(Math.random() * 11)) + 1, (Math.floor(Math.random() * 11)) + 1];
 var crystalImageSrc = ["assets/images/gem1.png", "assets/images/gem2.png", "assets/images/gem3.png", "assets/images/gem4.png"];
 
@@ -21,4 +21,9 @@ for (var i = 0; i < crystalValue.length; i++) {
 
     // append each crystal image to the page.
     $(".crystals").append(imageCrystal);
-  }
+ }
+
+$(".crystal-image").click(function() {
+	score += parseInt($(this).attr("data-crystalvalue"));
+	$(".score").text(score);
+});
