@@ -18,3 +18,9 @@
   	font-family: 'Bangers', cursive;
 
   }
+
+ .crystal-image {
+    width: 140px;
+    height: 140px;
+    padding: 5px;
+  }
